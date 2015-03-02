@@ -7,4 +7,9 @@ Rails.application.routes.draw do
     # This behavior seems to show up only in production mode.
     mount Sufia::Engine => '/'
   root to: 'homepage#index'
+
+  resources :items
+
+  resources :my_items, controller: 'my/items'
+
 end

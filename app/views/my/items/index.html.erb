@@ -1,0 +1,8 @@
+<h1> My Items </h1>
+
+<ul>
+<% @document_list.each do |doc| %>
+  <li><%= doc.to_model.inspect %></li>
+<% end %>
+</ul>
+
